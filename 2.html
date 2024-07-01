@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+        text-align: center;
+    }
+    img {
+        display: inline-block;
+    }
+    #bun:hover , #tomato:hover , #cheese:hover , #patty:hover , #bbun:hover{
+        padding: 25px;
+        transition: 1.5s;
+
+    }
+
+    #bun {
+        z-index: 100; /* Ensure the bun stays at the bottom */
+    }
+
+    #cheese {
+        z-index: 200; /* Higher z-index to ensure cheese is above patty */
+    }
+
+    #patty {
+        z-index: 100; /* Lower z-index for patty */
+    }
+
+    #bbun {
+        z-index: 0; /* Lowest z-index for the bottom bun */
+    }
+
+    </style>
+</head>
+<body>
+
+    <div style="display: flexbox; flex-direction: row; justify-content: center; align-items: center;">
+        <div style="margin-bottom: -65px; margin-top: 50px; position: relative;"><img id="bun" src="topbun.png"></div>
+        <div style="margin-left: 10px; margin-top: -15px; position: relative;"><img    id="tomato" src="cheese (2).png"></div>
+        <div style="margin-top: -78px; margin-left: 20px;  "><img  id="cheese"  src="cheese (1).png"></div>
+        <div class="zxc" id="abc"  style="margin-top: -70px; margin-left: 20px;  position: relative; "><img   id="patty" src="cheese (3).png"></div>
+        <div   style="margin-top: -93px; margin-left: 30px;"  position: absolute;><img    id="bbun" src="bun.png"></div>
+        
+    </div>
+    
+
+</body>
+</html>
